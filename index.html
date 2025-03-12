@@ -20,6 +20,7 @@
             background-size: 200% 200%;
             animation: backgroundMove 30s ease infinite;
             overflow-y: auto;
+            cursor: pointer;
         }
 
         /* Animazione fluida dello sfondo */
@@ -99,6 +100,12 @@
     </style>
 </head>
 <body>
+    <!-- Musica in sottofondo -->
+    <audio id="backgroundAudio" loop>
+        <source src="https://raw.githubusercontent.com/CainRg0/CainWeb/main/Air%20on%20IV%20string.mp3" type="audio/mp3">
+        Il tuo browser non supporta il tag audio.
+    </audio>
+
     <div class="name-container">
         <h2>Hotel Elegance</h2>
         <h3>Your luxurious retreat awaits</h3>
@@ -110,17 +117,24 @@
         <p>Hotel Elegance had always been a place of luxury and elegance. Its polished mahogany floors and crystal chandeliers spoke of old-world charm, while the whispered tales of eerie happenings on the fifth floor gave the hotel an air of mystery.</p>
         
         <h2>Arrival of the Detective</h2>
-        <p>Detective Muriello Pasquale had been staying at the hotel, seeking peace away from the chaotic world of crime-solving. But old habits die hard. The moment he heard the commotion, he stepped into the corridor, ready to take charge.</p>
+        <p>Detective Muriello Pasquale was called to the hotel after the hotel manager, Marco Aprea reported the disappearing of the guest of room 502.</p>
         
         <h2>The Witnesses</h2>
-        <p>Di Mauro Giuseppe, the Tourist, claimed he saw a shadow near the door to Room 502 around 11:50 PM, just before the noise. Sam Thompson, the Waiter, delivered drinks at 11:30 PM. Marcus Russo, the Security Guard, confirmed that the fire escape ladder had been used.</p>
+        <p>Di Mauro Giuseppe, the Tourist, claimed he saw a shadow near the door to Room 502 around 11:50 PM, just before the noise. Davide Scognamiglio, the Waiter, delivered drinks in the room 502at 11:30 PM. he stated that the guest looked really anxious. Giuseppe Russo, the Security Guard, confirmed that the fire escape ladder had been used.</p>
         
         <h2>The Hidden Clues</h2>
-        <p>Blackwood found several important clues: a bloodstain on the curtains, a partially burnt letter, and a strange book filled with notes about betrayal and danger.</p>
+        <p>Muriello found several important clues: A flipped table, a broken vase and footprints near the window.  </p>
        
         <h2>Uncovering the Truth</h2>
-        <p>The guest in Room 502 arranged a secret meeting with someone they trusted. The meeting went wrong, resulting in a desperate escape through the fire escape ladder. The mystery remained unsolved.</p>
+        <p>The guest in Room 502 arranged a meeting with someone they trusted. He looked anxious. The meeting went wrong when a mysterious man in black, entered the room. As soon as the guest saw the man he started panicking. In the bat of an eye, the man knocked out the guest and then proceed to knock him out. He then took the body and escaped from the fire escape ladder. The mystery remained unsolved.</p>
     </div>
 
+    <script>
+        // Avvia la musica al clic del corpo della pagina
+        document.body.addEventListener('click', function() {
+            const audio = document.getElementById('backgroundAudio');
+            audio.play(); // Avvia la musica
+        });
+    </script>
 </body>
 </html>
