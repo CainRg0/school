@@ -3,138 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hotel Elegance</title>
+    <title>Second Life - Second-Hand Store</title>
     <style>
-        /* Main Body */
         body {
+            font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            font-family: 'Times New Roman', serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            height: 100vh;
-            color: #333;
-            background: linear-gradient(135deg, #FFF0F0, #FFC1C1, #FF6B6B);
-            background-size: 200% 200%;
-            animation: backgroundMove 30s ease infinite;
-            overflow-y: auto;
-            cursor: pointer;
-        }
-
-        /* Animazione fluida dello sfondo */
-        @keyframes backgroundMove {
-            0% {
-                background-position: 0% 0%;
-            }
-            50% {
-                background-position: 100% 100%;
-            }
-            100% {
-                background-position: 0% 0%;
-            }
-        }
-
-        /* Name Section */
-        .name-container {
-            background: rgba(255, 255, 255, 0.85);
-            padding: 20px;
-            border-radius: 15px;
-            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
             text-align: center;
-            margin-bottom: 20px;
-            width: 90%;
         }
-
-        h2 {
-            font-family: 'Garamond', serif;
-            font-size: 2.5em;
-            color: #B22222;
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px;
+            font-size: 24px;
         }
-
-        h3 {
-            font-size: 1.2em;
-            color: #8B0000;
-            font-style: italic;
-        }
-
-        /* Button Styles */
-        .click-button {
-            display: block;
-            margin: 15px auto;
-            padding: 10px 20px;
-            background: #B22222;
-            color: #FFF;
-            text-decoration: none;
-            font-size: 1em;
-            border-radius: 8px;
-            transition: transform 0.3s, box-shadow 0.3s;
-            box-shadow: 0 4px 10px rgba(178, 34, 34, 0.5);
-        }
-
-        .click-button:hover {
-            transform: scale(1.05);
-            box-shadow: 0 6px 15px rgba(178, 34, 34, 0.8);
-        }
-
-        /* Story Container */
-        .story-container {
-            display: none;
-            opacity: 0;
-            background: rgba(255, 255, 255, 0.9);
+        .container {
+            width: 80%;
+            margin: auto;
             padding: 20px;
-            border-radius: 15px;
-            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
-            margin-top: 20px;
-            max-width: 90%;
-            font-size: 1em;
-            line-height: 1.5;
-            transition: opacity 0.6s ease;
         }
-
-        .story-container.visible {
-            display: block;
-            opacity: 1;
+        .product {
+            display: inline-block;
+            width: 30%;
+            margin: 10px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .product img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            margin-top: 20px;
         }
     </style>
 </head>
 <body>
-    <!-- Musica in sottofondo -->
-    <audio id="backgroundAudio" loop>
-        <source src="https://raw.githubusercontent.com/CainRg0/CainWeb/main/Air%20on%20IV%20string.mp3" type="audio/mp3">
-        Il tuo browser non supporta il tag audio.
-    </audio>
 
-    <div class="name-container">
-        <h2>Hotel Elegance</h2>
-        <h3>Your luxurious retreat awaits</h3>
-        <a href="javascript:void(0)" class="click-button" onclick="document.getElementById('storyContainer').classList.toggle('visible')">Story</a>
+<header>Welcome to Second Life - Second-Hand Store</header>
+
+<div class="container">
+    <h2>Why Choose Us?</h2>
+    <p>We offer high-quality second-hand clothes, accessories, and furniture at affordable prices. Choosing second-hand helps the environment and saves money!</p>
+
+    <h2>Our Products</h2>
+    
+    <div class="product">
+        <img src="https://images.app.goo.gl/1dhxvqkpvXDtkFiH6" alt="Second-hand Clothes">
+        <h3>Clothes</h3>
+        <p>Stylish and affordable second-hand clothes for all.</p>
     </div>
 
-    <div class="story-container" id="storyContainer">
-        <h1>The Strange Noise in the Night</h1>
-        <p>Hotel Elegance had always been a place of luxury and elegance. Its polished mahogany floors and crystal chandeliers spoke of old-world charm, while the whispered tales of eerie happenings on the fifth floor gave the hotel an air of mystery.</p>
-        
-        <h2>Arrival of the Detective</h2>
-        <p>Detective Muriello Pasquale was called to the hotel after the hotel manager, Marco Aprea reported the disappearing of the guest of room 502.</p>
-        
-        <h2>The Witnesses</h2>
-        <p>Di Mauro Giuseppe, the Tourist, claimed he saw a shadow near the door to Room 502 around 11:50 PM, just before the noise. Davide Scognamiglio, the Waiter, delivered drinks in the room 502at 11:30 PM. he stated that the guest looked really anxious. Giuseppe Russo, the Security Guard, confirmed that the fire escape ladder had been used.</p>
-        
-        <h2>The Hidden Clues</h2>
-        <p>Muriello found several important clues: A flipped table, a broken vase and footprints near the window.  </p>
-       
-        <h2>Uncovering the Truth</h2>
-        <p>The guest in Room 502 arranged a meeting with someone they trusted. He looked anxious. The meeting went wrong when a mysterious man in black, entered the room. As soon as the guest saw the man he started panicking. In the bat of an eye, the man knocked out the guest and then proceed to knock him out. He then took the body and escaped from the fire escape ladder. The mystery remained unsolved.</p>
+    <div class="product">
+        <img src="https://www.gettyimages.it/detail/foto/woman-shopping-for-clothing-in-los-angeles-immagine-royalty-free/1590519676?searchscope=image%2Cfilm" alt="Accessories">
+        <h3>Accessories</h3>
+        <p>Beautiful vintage and modern accessories.</p>
     </div>
 
-    <script>
-        // Avvia la musica al clic del corpo della pagina
-        document.body.addEventListener('click', function() {
-            const audio = document.getElementById('backgroundAudio');
-            audio.play(); // Avvia la musica
-        });
-    </script>
+    <div class="product">
+        <img src="https://www.gettyimages.it/detail/foto/clothing-rack-at-a-thrift-store-immagine-royalty-free/155419823?searchscope=image%2Cfilm" alt="Furniture">
+        <h3>Furniture</h3>
+        <p>Unique furniture pieces to decorate your home.</p>
+    </div>
+</div>
+
+<footer>Visit us today and give new life to old treasures!</footer>
+
 </body>
 </html>
